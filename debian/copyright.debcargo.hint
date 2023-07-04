@@ -4,12 +4,31 @@ Upstream-Contact: Peter Atashian <retep998@gmail.com>
 Source: https://github.com/retep998/winapi-rs
 
 Files: *
-Copyright: 2016-2018 winapi-rs developers
+Copyright: FIXME (overlay) UNKNOWN Peter Atashian <retep998@gmail.com>
 License: MIT or Apache-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: ./build.rs
+Copyright: 2016-2018 winapi-rs developers
+License: UNKNOWN; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: ./src/lib.rs
+Copyright: 2016 winapi-rs developers
+License: UNKNOWN; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
 
 Files: debian/*
 Copyright: 2018 Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-           2018 Sylvestre Ledru <sylvestre@debian.org>
+           2018 FIXME (overlay) Your Name <Your Email>
 License: MIT or Apache-2.0
 
 License: Apache-2.0
@@ -34,4 +53,6 @@ License: MIT
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
+
+
 

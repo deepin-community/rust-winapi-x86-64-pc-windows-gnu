@@ -1,15 +1,33 @@
-Source: template-repository
-Section: unknown
+Source: rust-winapi-x86-64-pc-windows-gnu
+Section: rust
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper (>= 11),
+ dh-cargo (>= 5),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders: Sylvestre Ledru <sylvestre@debian.org>
+Standards-Version: 4.1.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf
+X-Cargo-Crate: winapi-x86_64-pc-windows-gnu
 
-Package: template-repository
+Package: librust-winapi-x86-64-pc-windows-gnu-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-winapi-x86-64-pc-windows-gnu+default-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0+default-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0.4-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0.4+default-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0.4.0-dev (= ${binary:Version}),
+ librust-winapi-x86-64-pc-windows-gnu-0.4.0+default-dev (= ${binary:Version})
+Description: Import libraries for the x86_64-pc-windows-gnu target - Rust source code
+ Please don't use this crate directly, depend on winapi instead.
+ .
+ This package contains the source for the Rust winapi-x86_64-pc-windows-gnu
+ crate, packaged by debcargo for use with cargo and dh-cargo.
